@@ -1,0 +1,70 @@
+@use "vars";
+
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    #12302b,
+    #475e58,
+    #7f9089,
+    #bac5c0,
+    #f8fdfa
+  );
+  padding-bottom: 2rem;
+
+  &__logo-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    @media (min-width: 1024px) {
+      justify-content: space-between;
+      flex-direction: initial;
+      padding: 2rem;
+    }
+
+    &__logo {
+      color: #fff;
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+
+      a {
+        margin-right: 1rem;
+        color: black;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 3rem;
+    @media (min-width: 1024px) {
+      padding: 2rem;
+      justify-content: space-between;
+      flex-direction: initial;
+    }
+
+    &__desc {
+      &__title {
+        text-align: center;
+        @media (min-width: 1024px) {
+          text-align: left;
+        }
+      }
+    }
+
+    &__video {
+      max-width: 600px;
+    }
+  }
+}

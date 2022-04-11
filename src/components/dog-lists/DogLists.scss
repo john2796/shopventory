@@ -1,0 +1,40 @@
+$tundora: #4b4848;
+
+.dog-lists {
+  padding-bottom: 2rem;
+  &__title {
+    padding-top: 2rem;
+  }
+
+  &__searchbox-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0;
+  }
+
+  &__searchbox {
+    border: 0;
+    width: 80%;
+    padding: 20px 20px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 8px 15px rgba($tundora, 0.1);
+    transition: all 0.4s ease;
+    font-size: 1.5rem;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0px 9px 20px rgba($tundora, 0.3);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2fbf6;
+    margin: 2rem 0;
+  }
+}

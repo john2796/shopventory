@@ -1,0 +1,42 @@
+$card-width: 320px;
+$border-radius: 7px;
+
+.dog-card {
+  background: #fff;
+  width: fit-content;
+  border-radius: $border-radius;
+  transition: 0.2s ease;
+  border: 1px solid #12302b2b;
+  &:hover {
+    box-shadow: 0 5px 10px 0.5px rgba(128, 128, 128, 0.356);
+  }
+  &__img {
+    width: $card-width;
+    height: 350px;
+    object-fit: cover;
+
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+
+  &__footer {
+    display: flex;
+    width: $card-width;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    &__subtype {
+      width: 100%;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
