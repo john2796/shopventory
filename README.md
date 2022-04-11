@@ -26,7 +26,7 @@
 
 1. Clone the repo
    ```sh
-   git clone [repo link]
+   git clone https://github.com/john2796/shopventory.git
    ```
 2. Install NPM packages
    ```sh
